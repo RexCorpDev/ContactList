@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact List</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="style_ContactList.css" media="screen" title="no title" charset="utf-8">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header text-left animated fadeInRight">Contacts</div>
+  <br>
+  <div class="container fluid">
+    <div class="row animated fadeIn">
+      <div class="contact col-lg-3 col-md-3 text-center" id="r1c1">
+        <span class="name animated fadein">
+          <a></a>
+        </span>
+        <br>
+        <a class="btn add-contact" data-id="" data-dismiss="modal" data-toggle="modal" href="#addContactModal">
+          <i class="glyphicon glyphicon-plus-sign"></i>
+        </a>
+      </div>
+      <div class="contact col-lg-3 col-md-3 text-center" id="r1c2">
+        <span class="name animated fadein"></span>
+        <br>
+        <a class="btn add-contact" data-id="" data-dismiss="modal" data-toggle="modal" href="#addContactModal">
+          <i class="glyphicon glyphicon-plus-sign"></i>
+        </a>
+      </div>
+      <<div class="contact col-lg-3 col-md-3 text-center" id="r1c3">
+        <span class="name animated fadein"></span>
+        <br>
+        <a class="btn add-contact" data-id="" data-dismiss="modal" data-toggle="modal" href="#addContactModal">
+          <i class="glyphicon glyphicon-plus-sign"></i>
+        </a>
+      </div>
+      <div class="contact col-lg-3 col-md-3 text-center" id="r1c">
+        <span class="name animated fadein"></span>
+        <br>
+        <a class="btn add-contact" data-id="" data-dismiss="modal" data-toggle="modal" href="#addContactModal">
+          <i class="glyphicon glyphicon-plus-sign"></i>
+        </a>
+      </div>
+    </div>
+    <div class="collapse hidden-row " id="hidden-row">
+      <div class="col-lg-3 hidden-social text-center well">
+        <a data-placement="top" class="social-links col-lg-3 btn faceb" data-id="" href=""><i class="fa fa-facebook animated rotateIn fadein"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn phoneN" data-id="" data-toggle="modal" data-target="#phoneSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-earphone"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn emailA" data-id="" data-toggle="modal" data-target="#emailSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-envelope"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn infoM" data-id="" data-toggle="modal" data-target="#moreInfoSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-info-sign"></i></a>
+      </div>
+      <div class="col-lg-3 hidden-social text-center well">
+        <a data-placement="top" class="social-links col-lg-3 btn faceb" data-id="" href=""><i class="fa fa-facebook animated rotateIn fadein"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn phoneN" data-id="" data-toggle="modal" data-target="#phoneSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-earphone"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn emailA" data-id="" data-toggle="modal" data-target="#emailSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-envelope"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn infoM" data-id="" data-toggle="modal" data-target="#moreInfoSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-info-sign"></i></a>
+      </div>
+      <div class="col-lg-3 hidden-social text-center well">
+        <a data-placement="top" class="social-links col-lg-3 btn faceb" data-id="" href=""><i class="fa fa-facebook animated rotateIn fadein"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn phoneN" data-id="" data-toggle="modal" data-target="#phoneSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-earphone"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn emailA" data-id="" data-toggle="modal" data-target="#emailSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-envelope"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn infoM" data-id="" data-toggle="modal" data-target="#moreInfoSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-info-sign"></i></a>
+      </div>
+      <div class="col-lg-3 hidden-social text-center well">
+        <a data-placement="top" class="social-links col-lg-3 btn faceb" data-id="" href=""><i class="fa fa-facebook animated rotateIn fadein"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn phoneN" data-id="" data-toggle="modal" data-target="#phoneSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-earphone"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn emailA" data-id="" data-toggle="modal" data-target="#emailSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-envelope"></i></a>
+        <a data-placement="top" class="social-links col-lg-3 btn infoM" data-id="" data-toggle="modal" data-target="#moreInfoSystemModal"><i class="glyphicon  animated rotateIn fadein glyphicon-info-sign"></i></a>
+      </div>
+    </div>
+    <div class="modal-templates .saved-contacts">
+      <div class="modal-appends">
+        <div class="phoneList">
+
+        </div>
+        <div class="emailsList">
+
+        </div>
+        <div class="addresList">
+
+        </div>
+        <div class="contactList" style="display: hide">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- MODALS -->
+
+
+
+
+
+    <div class="modal-templates">
+      <!-- MORE-INFO modal -->
+
+      <div id="moreInfoSystemModal" data-id="" class="modal fade template" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="gridSystemModalLabel">More Info</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row text-center">
+                <div class="col-lg-12 hidden-social">
+                  <img class="img-rounded pull-left info-image" src="">
+                  <h4 class="modal-title address">Address</h4>
+
+                  <span class="address">
+                    <span class="address-street"></span>
+                    <br>
+                    <span class="address-city"></span>
+                    <span class="address-state"></span>
+                    <br>
+                    <span class="address-zip"></span>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info edit-contact" data-id="" data-dismiss="moda" data-toggle="modal" href="#addContactModal">Edit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- /.modal-footer -->
+
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <!-- EMAIL modal TEMPLATE -->
+
+      <div id="emailSystemModal" class="modal fade template" tabindex="-1" role="dialog" aria-labelledby="emailSystemModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="emailSystemModalLabel">Email</h4>
+            </div>
+            <div class="modal-body phone">
+              <div class="row">
+                <form class="email col-lg-12" name="email">
+                  <label class="label" for="email">Your Email</label>
+                  <br>
+                  <input type="text" name="email" class="form-control input-xlarge" placeholder="">
+                  <br>
+                  <label class="label" for="email">Contact E-mail</label>
+                  <br>
+                  <span class="email-storage">
+                    <input type="email" name="email" class="form-control input-xlarge email-added" placeholder="address@host.com">
+                  </span>
+                  <br>
+                  <label class="label" for="message">Enter a Message</label>
+                  <br>
+                  <textarea name="message" class="form-control input-xlarge" placeholder="Type Email..."></textarea>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary edit-email" data-dismiss="modal">Submit</button>
+              <button type="button" class="btn btn-info edit-contact" data-id="" data-dismiss="modal" data-toggle="modal" href="#addContactModal">Edit</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <!-- PHONE Template Modal  -->
+
+      <div id="phoneSystemModal" data-id="" class="modal fade template" tabindex="-1" role="dialog" aria-labelledby="phoneSystemModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="phoneSystemModalLabel">Phone Number</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row text-center phone">
+                <h1><span class="phone-number"></span></h1>
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info edit-contact" data-id="" data-dismiss="modal" data-toggle="modal" role="dialog" href="#addContactModal">Edit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <!-- ADD Contact Modal  -->
+
+      <div id="addContactModal" class="modal fade template" tabindex="-1" data-id="" data-toggle="modal" aria-labelledby="addContactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="contactForm">Add Contact</h4>
+            </div>
+            <div class="modal-body">
+              <form class="submit-form">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control newName" name="name" placeholder="First Last">
+                </div>
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" class="form-control newNumber" name="phone" placeholder="(XXX)-XXX-XXXX">
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="text" class="form-control newEmail" id="exampleInputPassword1" name="email" value="" placeholder="address@email.com">
+                </div>
+                <div class="form-group">
+                  <fieldset>
+                    <label>Address</label>
+                    <label for="address-block" class="address-block"></label>
+                    <input type="text" id="address-street" class="form-control new-address-street" name="street" placeholder="Address / Street / Box #">
+                    <label for="address-block" class="address-block"></label>
+                    <input type="text" id="address-city" class="form-control new-address-city" name="city" placeholder="City / FPO-APO">
+                    <label for="address-block" class="address-block"></label>
+                    <input type="text" id="address-state" class="form-control new-address-state" name="state" placeholder="State / Province / Region / AP-AA">
+                    <label for="address-block" class="address-block"></label>
+                    <input type="text" id="address-zip" class="form-control new-address-zip" name="zip" placeholder="ZIP or Postal Code">
+                  </fieldset>
+                </div>
+                <div class="form-group">
+                  <label>Facebook URL</label>
+                  <br>
+                  <input type="text" name="fbaddress" class="form-control newFacebook" id="exampleInputFile" placeholder="facebook.url">
+                </div>
+                <div class="form-group">
+                  <label>Image URL</label>
+                  <br>
+                  <input type="text" name="image" class="form-control newImage" id="exampleInputFile" placeholder="Link .jpg .png .bmp">
+                </div>
+                <hr>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary submit-contact" data-dismiss="modal">Submit</button>
+              <!-- <button type="button" class="btn btn-danger delete-contact" data-dismiss="modal">Delete</button> -->
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+          <!-- /.modal-body -->
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal-templates -->
+
+
+
+  </div>
+  <!-- /.container -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main_ContactList.js" charset="utf-8"></script>
+</body>
+
+</html>
