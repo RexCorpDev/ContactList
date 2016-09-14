@@ -11,14 +11,9 @@ $(function () {
   $('a.social-links.infoM').on('click', filterSocialButton.address_info);
 
   $('button.btn.btn-info.edit-contact').on('click', EditContact.edit);
-
-
-
 });
 // Recieves any/all updates: ADD, READ, WRITE & send to changes to LS.
-
-
-
+//
 // ----------- SHORTCUT BUTTONS -----------------
 
 var filterSocialButton = {
